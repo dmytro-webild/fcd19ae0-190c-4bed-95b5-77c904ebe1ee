@@ -51,11 +51,11 @@ export default function LandingPage() {
             { text: "Reserve a Table", href: "#cta" }
           ]}
           mediaItems={[
-            { imageSrc: "http://img.b2bpic.net/free-photo/onion-rings-served-with-lettuce-sauce_141793-889.jpg", imageAlt: "Fresh seafood platter display" },
-            { imageSrc: "http://img.b2bpic.net/free-photo/flat-lay-french-fries-bowls-with-salt-copy-space_23-2148701505.jpg", imageAlt: "Crispy fried calamari" },
-            { imageSrc: "http://img.b2bpic.net/free-photo/grilled-prawns-wooden-sticks-side-view_141793-4454.jpg", imageAlt: "Sautéed shrimp with herbs" },
+            { imageSrc: "http://img.b2bpic.net/free-photo/onion-rings-served-with-lettuce-sauce_141793-889.jpg?_wi=1", imageAlt: "Fresh seafood platter display" },
+            { imageSrc: "http://img.b2bpic.net/free-photo/flat-lay-french-fries-bowls-with-salt-copy-space_23-2148701505.jpg?_wi=1", imageAlt: "Crispy fried calamari" },
+            { imageSrc: "http://img.b2bpic.net/free-photo/grilled-prawns-wooden-sticks-side-view_141793-4454.jpg?_wi=1", imageAlt: "Sautéed shrimp with herbs" },
             { imageSrc: "http://img.b2bpic.net/free-photo/fresh-healthy-food-breakfast-lunch-ideas-bread-with-cheese-avocado-salmon_8353-8798.jpg", imageAlt: "Grilled fresh fish" },
-            { imageSrc: "http://img.b2bpic.net/free-photo/vegetable-salad-with-tomato-cucumber-bell-peppers-red-onion-grated-parmesan-parsley_140725-8477.jpg", imageAlt: "Fresh Mediterranean tabouli" }
+            { imageSrc: "http://img.b2bpic.net/free-photo/vegetable-salad-with-tomato-cucumber-bell-peppers-red-onion-grated-parmesan-parsley_140725-8477.jpg?_wi=1", imageAlt: "Fresh Mediterranean tabouli" }
           ]}
         />
       </div>
@@ -68,13 +68,13 @@ export default function LandingPage() {
           useInvertedBackground={false}
           products={[
             {
-              id: "1",              name: "Fried Calamari",              price: "$14",              imageSrc: "http://img.b2bpic.net/free-photo/flat-lay-french-fries-bowls-with-salt-copy-space_23-2148701505.jpg",              imageAlt: "Fried calamari"
+              id: "1",              name: "Fried Calamari",              price: "$14",              imageSrc: "http://img.b2bpic.net/free-photo/flat-lay-french-fries-bowls-with-salt-copy-space_23-2148701505.jpg?_wi=2",              imageAlt: "Fried calamari"
             },
             {
-              id: "2",              name: "Tabouli",              price: "$12",              imageSrc: "http://img.b2bpic.net/free-photo/vegetable-salad-with-tomato-cucumber-bell-peppers-red-onion-grated-parmesan-parsley_140725-8477.jpg",              imageAlt: "Fresh tabouli salad"
+              id: "2",              name: "Tabouli",              price: "$12",              imageSrc: "http://img.b2bpic.net/free-photo/vegetable-salad-with-tomato-cucumber-bell-peppers-red-onion-grated-parmesan-parsley_140725-8477.jpg?_wi=2",              imageAlt: "Fresh tabouli salad"
             },
             {
-              id: "3",              name: "Sautéed Shrimp",              price: "$16",              imageSrc: "http://img.b2bpic.net/free-photo/grilled-prawns-wooden-sticks-side-view_141793-4454.jpg",              imageAlt: "Sautéed shrimp"
+              id: "3",              name: "Sautéed Shrimp",              price: "$16",              imageSrc: "http://img.b2bpic.net/free-photo/grilled-prawns-wooden-sticks-side-view_141793-4454.jpg?_wi=2",              imageAlt: "Sautéed shrimp"
             }
           ]}
           gridVariant="three-columns-all-equal-width"
@@ -182,7 +182,7 @@ export default function LandingPage() {
           description="Reserve your table or order your favorites for delivery. Experience the freshness and warmth that defines Mermaids."
           background={{ variant: "sparkles-gradient" }}
           useInvertedBackground={false}
-          imageSrc="http://img.b2bpic.net/free-photo/onion-rings-served-with-lettuce-sauce_141793-889.jpg"
+          imageSrc="http://img.b2bpic.net/free-photo/onion-rings-served-with-lettuce-sauce_141793-889.jpg?_wi=2"
           imageAlt="Seafood platter"
           mediaAnimation="slide-up"
           mediaPosition="right"
