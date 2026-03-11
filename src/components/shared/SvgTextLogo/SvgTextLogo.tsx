@@ -1,51 +1,38 @@
-"use client";
+import React, { SVGProps } from 'react';
 
-import { memo } from "react";
-import useSvgTextLogo from "./useSvgTextLogo";
-import { cls } from "@/lib/utils";
-
-interface SvgTextLogoProps {
-  logoText: string;
-  adjustHeightFactor?: number;
-  verticalAlign?: "top" | "center";
-  className?: string;
+interface SvgTextLogoProps extends SVGProps<SVGSVGElement> {
+  text?: string;
+  fontSize?: number;
+  fontFamily?: string;
 }
 
-const SvgTextLogo = memo<SvgTextLogoProps>(function SvgTextLogo({
-  logoText,
-  adjustHeightFactor,
-  verticalAlign = "top",
-  className = "",
-}) {
-  const { svgRef, textRef, viewBox, aspectRatio } = useSvgTextLogo(logoText, false, adjustHeightFactor);
-
+const SvgTextLogo: React.FC<SvgTextLogoProps> = ({
+  text = 'Webild',
+  fontSize = 48,
+  fontFamily = 'Arial, sans-serif',
+  ...props
+}) => {
   return (
     <svg
-      ref={svgRef}
-      viewBox={viewBox}
-      className={cls("w-full", className)}
-      style={{ aspectRatio: aspectRatio }}
-      preserveAspectRatio="none"
-      role="img"
-      aria-label={`${logoText} logo`}
+      width="200"
+      height="60"
+      viewBox="0 0 200 60"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <text
-        ref={textRef}
-        x="0"
-        y={verticalAlign === "center" ? "50%" : "0"}
-        className="font-bold fill-current"
-        style={{
-          fontSize: "20px",
-          letterSpacing: "-0.02em",
-          dominantBaseline: verticalAlign === "center" ? "middle" : "text-before-edge"
-        }}
+        x="50%"
+        y="50%"
+        textAnchor="middle"
+        dominantBaseline="middle"
+        fontSize={fontSize}
+        fontFamily={fontFamily}
+        fill="currentColor"
       >
-        {logoText}
+        {text}
       </text>
     </svg>
   );
-});
-
-SvgTextLogo.displayName = "SvgTextLogo";
+};
 
 export default SvgTextLogo;
